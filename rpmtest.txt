@@ -1,0 +1,36 @@
+
+// Online IDE - Code Editor, Compiler, Interpreter
+
+public class Animal {
+    private string name;
+    
+    public string Name {
+    
+        get {
+            return name;
+        }
+        
+        set {
+            name = value;
+        }
+    }
+    }
+}
+
+public class Dog : Animal {
+    public void bark() {
+        System.Console.Writeln("dog barks");
+    }
+    
+    public void bark(string word) {
+        System.Console.Writeln("dog barks: " + word);
+    }
+}
+
+public class Program {
+    public static void Main(string[] args) {
+        Dog dog = new Dog { Name = "Uma" };
+        dog.bark(); // dog barks
+        dog.bark("hello"); // dog barks: hello
+    }
+}
